@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Particle Text Web Component</title>
+    <style>
+        body{
+            background: #111;
+            color: white;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+    </style>
+    <script type="module">
+        import "./ParticleText.js"
+    </script>
+</head>
+
+<body>
+    <particle-text id="particleText" size="1" color="#ffffcc" sharp="circle" effect="spread">Hello</particle-text>
+    <hr/>
+    <particle-text id="particleText" size="3" color="#00ffcc" sharp="square" effect="explode">World</particle-text>
+</body>
+</html>
