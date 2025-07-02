@@ -24,7 +24,6 @@ class ParticleText extends HTMLElement {
       this.createParticles();
     });
     this.timer = setInterval(() => {
-      // this.mode = this.mode === "gather" ? "disperse" : "gather";
       this.mode = this.modes[this.modeIndex];
       this.modeIndex = (this.modeIndex + 1) % this.modes.length;
       if (this.mode === "disperse") {
